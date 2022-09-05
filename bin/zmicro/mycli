@@ -1,0 +1,17 @@
+#!/bin/bash
+
+help() {
+  echo "Usage:"
+  echo "  zmicro mycli <args ...>"
+  echo ""
+}
+
+core() {
+  mycli "$@"
+}
+
+run() {
+  core "$@"
+}
+
+run "$@"
